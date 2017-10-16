@@ -1,0 +1,96 @@
+@import 'userHeader';
+.container {
+    .message-area {
+        margin-top: 77px;
+        a {
+            color: black;
+            font-family: 微软雅黑;
+        }
+        span {
+            background-color: #D12610;
+            padding: 3px 7px 2px 7px;
+        }
+        .breadcrumb>li+li:before {
+            color: black;
+        }
+    }
+    .message-detail-area {
+        min-height: 632px;
+        .nav-tabs {
+            li {
+                a {
+                    border-radius: 0;
+                    color: #999999;
+                    font-family: 微软雅黑;
+                    .badgeinfo {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #d12610;
+                    }
+                }
+            }
+        }
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:hover,
+        .nav-tabs>li.active>a:focus {
+            border: 1px solid #ddd;
+            border-top: 3px solid #d12610;
+            border-radius: 0;
+            border-bottom: none;
+            color: black;
+        }
+        .tab-content {
+            margin-top: 20px;
+            min-height: 520px;
+            max-height: 520px;
+            &:focus  .tab-content{
+                border: none;
+            }
+            .tab-pane {
+                .list-group {
+                    .list-group-item {
+                        padding: 13px 15px;font-family: 微软雅黑;
+                        width: 100%;
+                        text-align: left;
+                        span {
+                            background-color: #D12610;
+                            font-weight: normal;
+                            padding: 5px 8px 5px 7px;
+                            font-family: 微软雅黑;
+                        }
+                    }
+                }
+            }
+        }
+        .message-pagination {
+            float: right;
+            .pagination {
+                &>li {
+                    a,
+                    span {
+                        color: #607D8B;
+                    }
+                }
+                &>.active {
+                    &>a {
+                        border-color: #5CB85C;
+                        background-color: #5CB85C;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+hr{
+        margin-top: 60px;
+}
+
+footer {
+        a {
+            color: #5CB85C;
+        }
+    
+}

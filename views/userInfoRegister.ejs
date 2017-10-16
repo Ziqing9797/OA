@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户个人资料</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Search1.css" rel="stylesheet">
+    <link href="css/PrivateInf.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/favicon.ico"/>
+    <link rel="bookmark" href="/public/favicon.ico"/>
+</head>
+<body>
+<div id="root">
+    <div data-reactroot="" class="private">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+            <div class="container"><div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/home">OA系统</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <div class="user-info"><ol class="breadcrumb">
+                            <li class="active"><a href="#">User（185分）</a></li>
+                            <li><a href="#">论坛</a></li>
+                            <li><a href="/message">消息</a></li>
+                            <li><a href="javascript:void(0)"><a>退出</a></a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position">
+            <p><!-- react-text: 25 -->当前位置：我的-&gt;<!-- /react-text --></p>
+        </div>
+        <div class="private-information">
+            <form class="private-information-form" method="post" action="/userInfoRegister">
+                <div class="basic-inf">
+                    <label>登录名:</label>
+                    <input placeholder="请填写登录名" type="text" name="loginname">
+                </div>
+                <div class="basic-inf">
+                    <label>姓 &nbsp;&nbsp;名：</label>
+                    <input placeholder="请填写真实姓名" type="text" name="realname">
+                </div>
+                <div class="basic-inf">
+                    <label>学 &nbsp;&nbsp;校：</label>
+                    <input placeholder="请填写所在学校" type="text" name="school">
+                </div>
+                <div class="basic-inf">
+                    <label>学 &nbsp;&nbsp;号：</label>
+                    <input placeholder="请填写真实学号" type="text" name="studentid">
+                </div>
+                <div class="basic-inf">
+                    <label>专 &nbsp;&nbsp;业：</label>
+                    <input placeholder="请填写所在专业" type="text" name="major">
+                </div>
+                <div class="basic-inf">
+                    <label>班 &nbsp;&nbsp;级：</label>
+                    <input placeholder="请填写所在班级" type="text" name="uclass">
+                </div>
+                <div>
+                    <label>性 &nbsp;&nbsp;别：</label>
+                    <input type="radio" name="sex" value="1"><!-- react-text: 49 -->男<!-- /react-text -->
+                    <input type="radio" name="sex" value="2"><!-- react-text: 51 -->女<!-- /react-text -->
+                </div>
+                <div class="basic-inf">
+                    <label>电 &nbsp;&nbsp;话：</label>
+                    <input placeholder="你的电话" type="text" name="phone">
+                    <span></span>
+                </div>
+                <div class="basic-inf">
+                    <label>入学年份：</label>
+                    <select name="enrollmentYear">
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                    </select>
+                </div>
+                <div class="basic-inf">
+                    <label>学 &nbsp;&nbsp;历：</label>
+                    <select name="education">
+                        <option>本科</option>
+                        <option>专科</option>
+                    </select>
+                </div>
+                <div class="submit-inf">
+                    <div class="col-md-12 column">
+                        <button type='submit'  class="btn btn-default btn-block">提交资料</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container summary">
+            <footer>
+                <p class="pull-right"><a href="#top">回到顶部</a></p>
+                <p class="pull-left">© 东软小团队</p>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

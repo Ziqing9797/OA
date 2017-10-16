@@ -1,0 +1,103 @@
+.navbar {
+  font-family: "微软雅黑";
+}
+.navbar .user-info {
+  float: right;
+}
+.navbar .user-info .breadcrumb {
+  margin-bottom: 0;
+  margin-top: 8px;
+  background-color: #222222;
+}
+.navbar .user-info .breadcrumb li a {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+.navbar .user-info .breadcrumb li a:hover {
+  color: white;
+}
+.navbar .user-info .breadcrumb li:before {
+  color: #9E9E9E;
+}
+.navbar .user-info .breadcrumb > .active {
+  font-size: 15px;
+}
+.navbar .user-info .breadcrumb > .active a {
+  color: white;
+}
+.container .message-area {
+  margin-top: 77px;
+}
+.container .message-area a {
+  color: black;
+  font-family: 微软雅黑;
+}
+.container .message-area span {
+  background-color: #D12610;
+  padding: 3px 7px 2px 7px;
+}
+.container .message-area .breadcrumb > li + li:before {
+  color: black;
+}
+.container .message-detail-area {
+  min-height: 632px;
+}
+.container .message-detail-area .nav-tabs li a {
+  border-radius: 0;
+  color: #999999;
+  font-family: 微软雅黑;
+}
+.container .message-detail-area .nav-tabs li a .badgeinfo {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d12610;
+}
+.container .message-detail-area .nav-tabs > li.active > a,
+.container .message-detail-area .nav-tabs > li.active > a:hover,
+.container .message-detail-area .nav-tabs > li.active > a:focus {
+  border: 1px solid #ddd;
+  border-top: 3px solid #d12610;
+  border-radius: 0;
+  border-bottom: none;
+  color: black;
+}
+.container .message-detail-area .tab-content {
+  margin-top: 20px;
+  min-height: 520px;
+  max-height: 520px;
+}
+.container .message-detail-area .tab-content:focus .tab-content {
+  border: none;
+}
+.container .message-detail-area .tab-content .tab-pane .list-group .list-group-item {
+  padding: 13px 15px;
+  font-family: 微软雅黑;
+  width: 100%;
+  text-align: left;
+}
+.container .message-detail-area .tab-content .tab-pane .list-group .list-group-item span {
+  background-color: #D12610;
+  font-weight: normal;
+  padding: 5px 8px 5px 7px;
+  font-family: 微软雅黑;
+}
+.container .message-detail-area .message-pagination {
+  float: right;
+}
+.container .message-detail-area .message-pagination .pagination > li a,
+.container .message-detail-area .message-pagination .pagination > li span {
+  color: #607D8B;
+}
+.container .message-detail-area .message-pagination .pagination > .active > a {
+  border-color: #5CB85C;
+  background-color: #5CB85C;
+  color: white;
+}
+hr {
+  margin-top: 60px;
+}
+footer a {
+  color: #5CB85C;
+}

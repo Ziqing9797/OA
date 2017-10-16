@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <p>
+    用户信息界面
+    <table width="900" border="1" cellspacing="0" cellpadding="2">
+        <th>序号</th>
+        <th>用户名</th>
+        <th>年龄</th>
+        <th>操作</th>
+        <tr>
+            <td><%=queryRlt[0]['id']%></td>
+            <td><%=queryRlt[0]['loginname']%></td>
+            <td><a href="/deleteUser?userid=<%=queryRlt[0]['id']%>">删除</a></td>
+        </tr>
+    </table>
+    </p>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>消息</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/message.css" />
+		<link rel="shortcut icon" href="/public/favicon.ico"/>
+		<link rel="bookmark" href="/public/favicon.ico"/>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<a class="navbar-brand" href="/home">OA系统</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<div class="user-info">
+						<ol class="breadcrumb">
+							<li class="active">
+								<a href="/userInfoShow">User（185分）</a>
+							</li>
+							<li>
+								<a href="#">论坛</a>
+							</li>
+							<li>
+								<a href="/search">查找</a>
+							</li>
+							<li>
+								<a href="#">退出</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="message-area">
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">当前位置：</a>
+					</li>
+					<li>
+						<a href="/home">主页</a>
+					</li>
+					<li>
+						<a href="/missionSub">我的任务</a>
+					</li>
+					<li class="active">消息
+						<span class="badge">5</span>
+					</li>
+				</ol>
+			</div>
+			<div class="message-detail-area">
+				<ul class="nav nav-tabs">
+				  <li role="presentation" class="active">
+				  	<a href="#tab1" data-toggle="tab">老师发布任务
+				  		<span class="badgeinfo"></span>
+				  	</a>
+				  </li>
+				  <li role="presentation">
+				  	<a href="#tab2" data-toggle="tab">系统消息</a>
+				  </li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane row-fluid active" id="tab1">
+						<div class="list-group">
+						  <button type="button" class="list-group-item">童浩老师刚刚发布了《操作系统》实验报告
+						  	<span class="badge">未读</span>
+						  </button>
+						  <button type="button" class="list-group-item">朱明元老师刚刚发布了一则通知
+						  	<span class="badge">未读</span>
+						  </button>
+						  <button type="button" class="list-group-item">学习委员通知大家交作业
+						  	<span class="badge">未读</span>
+						  </button>
+						  <button type="button" class="list-group-item">概率论本周作业发布
+						  	<span class="badge">未读</span>
+						  </button>
+						  <button type="button" class="list-group-item">Java Web课堂源码已上传
+						  	<span class="badge">未读</span>
+						  </button>
+						  <button type="button" class="list-group-item">新作业发布啦~</button>
+						  <button type="button" class="list-group-item">新作业发布啦~</button>
+						  <button type="button" class="list-group-item">新作业发布啦~</button>
+						  <button type="button" class="list-group-item">新作业发布啦~</button>
+						  <button type="button" class="list-group-item">新作业发布啦~</button>
+						  <button type="button" class="list-group-item">新作业发布啦~</button>
+						</div>
+					</div>
+					<div class="tab-pane row-fluid" id="tab2">
+						<div class="list-group">
+						  <button type="button" class="list-group-item">新版本发布啦~</button>
+						  <button type="button" class="list-group-item">新版本发布啦~</button>
+						  <button type="button" class="list-group-item">新版本发布啦~</button>
+						  <button type="button" class="list-group-item">新版本发布啦~</button>
+						  <button type="button" class="list-group-item">新版本发布啦~</button>
+						</div>
+					</div>
+				</div>
+				<nav aria-label="..." class="message-pagination">
+					<ul class="pagination">
+						<li class="disabled">
+							<a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+						</li>
+						<li class="active">
+							<a href="#">1 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="">
+							<a href="#">2 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="">
+							<a href="#">3<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="">
+							<a href="#">4 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="">
+							<a href="#">5<span class="sr-only">(current)</span></a>
+						</li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<hr class="divider task-divider" />
+			<div class="summary">
+				<footer>
+					<p class="pull-right">
+						<a href="#top">回到顶部</a>
+					</p>
+					<p class="pull-left">&copy; 东软小团队</p>
+				</footer>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>

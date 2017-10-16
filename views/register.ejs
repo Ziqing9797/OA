@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/form-elements.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="/public/favicon.ico"/>
+		<link rel="bookmark" href="/public/favicon.ico"/>
+	</head>
+	<body style="height: 875px;">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<a class="navbar-brand" href="/home">OA系统</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<div class="row">
+						<div class="col-lg-6 header-search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for...">
+								<span class="input-group-btn">
+       									 <button class="btn btn-default" type="button">Go!</button>
+      								</span>
+							</div>
+						</div>
+						<ul class="nav navbar-nav">
+							<li class="">
+								<a href="#ad-carousel">官网详情</a>
+							</li>
+							<li>
+								<a href="#summary-container">简述</a>
+							</li>
+							<li>
+								<a href="/login" data-toggle="modal" data-target="#about-modal">登录</a>
+							</li>
+							<li>
+								<a href="/register">注册</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Top content -->
+		<div class="top-content" style="background-image: url(img/backgrounds/1.jpg);">
+			<div class="inner-bg">
+				<div class="container">
+					<div class="row login-title">
+						<div class="col-sm-8 col-sm-offset-2 text">
+							<h1><strong>OASYSTEM    </strong>注册页面</h1>
+							<div class="description">
+								<p>
+									这是基于学生端的注册页面
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 form-box">
+							<div class="form-top">
+								<div class="form-top-left">
+									<h3>注册</h3>
+									<p>请输入您的用户名和密码注册</p>
+								</div>
+								<div class="form-top-right">
+									<i class="fa fa-key"></i>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<form role="form" action="/register" method="post" class="login-form"  name="signupForm">
+									<div class="form-group">
+										<label class="sr-only" for="form-username">用户名</label>
+										<input type="text" name="uname" placeholder="请输入用户名..." class="form-username form-control" id="form-username">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-password">密码</label>
+										<input type="password" name="upwd" placeholder="请输入您的密码..." class="form-password form-control" id="password">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-password">密码</label>
+										<input type="password" name="form-password" placeholder="请再次输入您的密码..." class="form-password form-control" id="repassword">
+									</div>
+									<button type="submit" class="btn" onclick="return insertManager()">注册</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container summary">
+				<footer>
+					<p class="pull-right">
+						<a href="#top">回到顶部</a>
+					</p>
+					<p class="pull-left">&copy; 东软小团队</p>
+				</footer>
+			</div>
+		</div>
+
+		<script>
+            function insertManager() {
+                var password = document.getElementById("password").value;
+                var repassword = document.getElementById("repassword").value;
+                if(password!=repassword){
+                    window.alert("您输入的新密码与确认密码确认不一致");
+                    signupForm.repassword.focus();
+                    return false;
+                }
+                return true;
+            }
+		</script>
+	</body>
+
+</html>

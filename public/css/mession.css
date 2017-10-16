@@ -1,0 +1,49 @@
+
+/*
+mession*/
+body{
+   background-color: white;
+}
+/*
+mession-reqire*/
+.mession-container{
+    width:80%;
+    margin-left: 10%;
+}
+
+.mession-name{
+    display: flex;
+    align-items: center;
+}
+.mession-name img{
+    width: 60px;
+    hight:100px;
+    margin-right: 20px;
+}
+.mession-require,.mession-box-choose,.mession-over{
+    margin-left: 40px;
+}
+.mession-require{
+    padding-top: 30px;
+}
+.mession-box-choose{
+    border: 1px solid gainsboro;
+    width:90%;
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*
+mession-commit*/
+.choose-file{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.mession-commit .col-md-12 button{
+    margin:40px;
+    width: 90%;
+}

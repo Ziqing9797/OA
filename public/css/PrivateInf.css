@@ -1,0 +1,46 @@
+.private{
+    width: 80%;
+    margin-left: 10%;
+}
+.private-information{
+    border:1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.private-information div label{
+    width: 90px;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: normal;
+    font-style: normal;
+    text-align:left;
+}
+.private-information div{
+    margin:20px;
+}
+.private-information-form{
+    margin: 20px;
+    border:1px solid gainsboro;
+    width:40%;
+    padding: 10px;
+}
+.basic-inf input{
+    width:60%;
+    padding: 4px;
+}
+.basic-inf select{
+    width:40%;
+    border-radius: 5px;
+    padding: 3px;
+}
+.submit-inf button{
+    width:70%;
+    margin-left: 13%;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: gray;
+}

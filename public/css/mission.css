@@ -1,0 +1,59 @@
+.container .message-area {
+  margin-top: 77px;
+}
+.container .message-area a {
+  color: black;
+  font-family: 微软雅黑;
+}
+.container .message-area span {
+  background-color: #D12610;
+  padding: 3px 7px 2px 7px;
+}
+.container .message-area .breadcrumb > li + li:before {
+  color: black;
+}
+mession-reqire*
+.mession-container{
+    width:80%;
+    margin-left: 10%;
+}
+
+.mession-name{
+    display: flex;
+    align-items: center;
+}
+.mession-name img{
+    width: 40px;
+    margin-left: 35px;
+}
+.mession-require,.mession-box-choose,.mession-over{
+    margin-left: 40px;
+}
+.mession-require{
+    padding-top: 30px;
+}
+.mession-box-choose{
+    border: 1px solid gainsboro;
+    width:90%;
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.mession-box-choose img{
+	width: 25px;
+	height: 25px;
+}
+/*
+mession-commit*/
+.choose-file{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.mession-commit .col-md-12 button{
+    margin:40px;
+    width: 90%;
+}

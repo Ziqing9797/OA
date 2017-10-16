@@ -1,0 +1,68 @@
+@import 'userHeader';
+.user-info {
+    .container {
+        .message-area {
+            margin-top: 77px;
+            a {
+                color: black;
+                font-family: 微软雅黑;
+            }
+            span {
+                background-color: #D12610;
+                padding: 3px 7px 2px 7px;
+            }
+            .breadcrumb>li+li:before {
+                color: black;
+            }
+        }
+        .message-detail-area {
+            min-height: 632px;
+            .nav-tabs {
+                li {
+                    a {
+                        border-radius: 0;
+                        color: #999999;
+                        font-family: 微软雅黑;
+                        .badgeinfo {
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: #d12610;
+                        }
+                    }
+                }
+            }
+            .nav-tabs>li.active>a,
+            .nav-tabs>li.active>a:hover,
+            .nav-tabs>li.active>a:focus {
+                border: 1px solid #ddd;
+                border-top: 3px solid #d12610;
+                border-radius: 0;
+                border-bottom: none;
+                color: black;
+            }
+            .tab-content {
+                margin-top: 20px;
+                min-height: 520px;
+                max-height: 520px;
+                &:focus .tab-content {
+                    border: none;
+                }
+                .tab-pane {
+                    .list-group {
+                        .form-group {
+                            .modify-btn {
+                                float: right;
+                                margin-top: 13px;
+                                padding: 10px 22px;
+                                font-family: 微软雅黑;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

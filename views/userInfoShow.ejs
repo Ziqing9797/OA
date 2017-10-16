@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户个人资料</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Search1.css" rel="stylesheet">
+    <link href="css/PrivateInf.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/favicon.ico"/>
+    <link rel="bookmark" href="/public/favicon.ico"/>
+</head>
+<body>
+<div id="root">
+    <div data-reactroot="" class="private">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+            <div class="container"><div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/home">OA系统</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <div class="user-info"><ol class="breadcrumb">
+                            <li class="active"><a href="#">User（185分）</a></li>
+                            <li><a href="/message">消息</a></li>
+                            <li><a href="javascript:void(0)"><a>退出</a></a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="position">
+            <p><!-- react-text: 25 -->当前位置：我的-&gt;<!-- /react-text --></p>
+        </div>
+        <div class="private-information">
+            <form class="private-information-form" method="get" action="/userInfoModify">
+                <div class="basic-inf">
+                    <label>登录名:</label>
+                    <%var i=queryRlt.length-1%>
+                    <input placeholder=<%=queryRlt[i]['loginname']%> type="text" name="loginname" disabled>
+                </div>
+                <div class="basic-inf">
+                    <label>姓 &nbsp;&nbsp;名：</label>
+                    <input placeholder=<%=queryRlt[i]['realname']%> type="text" name="realname" disabled>
+                </div>
+                <div class="basic-inf">
+                    <label>学 &nbsp;&nbsp;校：</label>
+                    <input placeholder=<%=queryRlt[i]['school']%> type="text" name="school" disabled>
+                </div>
+                <div class="basic-inf">
+                    <label>学 &nbsp;&nbsp;号：</label>
+                    <input placeholder=<%=queryRlt[i]['studentid']%> type="text" name="studentid" disabled>
+                </div>
+                <div class="basic-inf">
+                    <label>专 &nbsp;&nbsp;业：</label>
+                    <input placeholder=<%=queryRlt[i]['major']%> type="text" name="major" disabled>
+                </div>
+                <div class="basic-inf">
+                    <label>班 &nbsp;&nbsp;级：</label>
+                    <input placeholder=<%=queryRlt[i]['class']%> type="text" name="uclass" disabled>
+                </div>
+                <div>
+                    <label>性 &nbsp;&nbsp;别：</label>
+                    <%
+                    var k=queryRlt[i]['sex']
+                    if(k==1){ %>
+                    <input type="radio" name="sex" value="1" checked >男
+                    <input type="radio" name="sex" value="2" disabled>女
+                    <% }else {%>
+                    <input type="radio" name="sex" value="1" disabled>男
+                    <input type="radio" name="sex" value="2" checked >女
+                    <% }%>
+                </div>
+                <div class="basic-inf">
+                    <label>电 &nbsp;&nbsp;话：</label>
+                    <input placeholder=<%=queryRlt[i]['phone']%> type="text" name="phone" disabled>
+                    <span></span>
+                </div>
+                <div class="basic-inf">
+                    <label>入学年份：</label>
+                    <%
+                    var k=queryRlt[i]['enrollmentYear']
+                    if(k==2015){ %>
+                    <select name="enrollmentYear" disabled>
+                        <option selected = "selected">2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                    </select>
+                    <% }else  if(k==2016) {%>
+                    <select name="enrollmentYear" disabled>
+                        <option>2015</option>
+                        <option selected = "selected">2016</option>
+                        <option>2017</option>
+                    </select>
+                    <% }else {%>
+                    <select name="enrollmentYear" disabled>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option selected = "selected">2017</option>
+                    </select>
+                    <% }%>
+                </div>
+                <div class="basic-inf">
+                    <label>学 &nbsp;&nbsp;历：</label>
+                    <%
+                    var k=queryRlt[i]['education']
+                    if(k=='本科'){ %>
+                    <select name="education" disabled>
+                        <option selected = "selected">本科</option>
+                        <option>专科</option>
+                    </select>
+                    <% }else {%>
+                    <select name="education" disabled>
+                        <option>本科</option>
+                        <option selected = "selected" >专科</option>
+                    </select>
+                    <% }%>
+                </div>
+                <div class="submit-inf">
+                    <div class="col-md-12 column">
+                        <button type='submit'  class="btn btn-default btn-block">修改资料</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container summary">
+            <footer>
+                <p class="pull-right"><a href="#top">回到顶部</a></p>
+                <p class="pull-left">© 东软小团队</p>
+            </footer>
+        </div>
+        </div>
+        </div>
+</div>
+</body>
+</html>

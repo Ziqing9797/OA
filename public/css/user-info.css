@@ -1,0 +1,80 @@
+.navbar {
+  font-family: "微软雅黑";
+}
+.navbar .user-info {
+  float: right;
+}
+.navbar .user-info .breadcrumb {
+  margin-bottom: 0;
+  margin-top: 8px;
+  background-color: #222222;
+}
+.navbar .user-info .breadcrumb li a {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+.navbar .user-info .breadcrumb li a:hover {
+  color: white;
+}
+.navbar .user-info .breadcrumb li:before {
+  color: #9E9E9E;
+}
+.navbar .user-info .breadcrumb > .active {
+  font-size: 15px;
+}
+.navbar .user-info .breadcrumb > .active a {
+  color: white;
+}
+.user-info .container .message-area {
+  margin-top: 77px;
+}
+.user-info .container .message-area a {
+  color: black;
+  font-family: 微软雅黑;
+}
+.user-info .container .message-area span {
+  background-color: #D12610;
+  padding: 3px 7px 2px 7px;
+}
+.user-info .container .message-area .breadcrumb > li + li:before {
+  color: black;
+}
+.user-info .container .message-detail-area {
+  min-height: 632px;
+}
+.user-info .container .message-detail-area .nav-tabs li a {
+  border-radius: 0;
+  color: #999999;
+  font-family: 微软雅黑;
+}
+.user-info .container .message-detail-area .nav-tabs li a .badgeinfo {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d12610;
+}
+.user-info .container .message-detail-area .nav-tabs > li.active > a,
+.user-info .container .message-detail-area .nav-tabs > li.active > a:hover,
+.user-info .container .message-detail-area .nav-tabs > li.active > a:focus {
+  border: 1px solid #ddd;
+  border-top: 3px solid #d12610;
+  border-radius: 0;
+  border-bottom: none;
+  color: black;
+}
+.user-info .container .message-detail-area .tab-content {
+  margin-top: 20px;
+  min-height: 520px;
+  max-height: 520px;
+}
+.user-info .container .message-detail-area .tab-content:focus .tab-content {
+  border: none;
+}
+.user-info .container .message-detail-area .tab-content .tab-pane .list-group .form-group .modify-btn {
+  float: right;
+  margin-top: 13px;
+  padding: 10px 22px;
+  font-family: 微软雅黑;
+  font-size: 15px;
+}

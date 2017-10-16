@@ -1,0 +1,23 @@
+.mession-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.task-name{
+    border:1px solid gainsboro;
+    padding: 5px;
+    margin-right:20px;
+    font-size:12px;
+    width: 80%;
+    text-align: center;
+}
+.task-list{
+    width: 50%;
+    margin-right: 20px;
+    border-right: 1px solid gainsboro;
+}
+.task-list .temp{
+    margin-top: 180px;
+    margin-left: 48%;
+    font-size: 20px;
+}

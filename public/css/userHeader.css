@@ -1,0 +1,27 @@
+.navbar {
+  font-family: "微软雅黑";
+}
+.navbar .user-info {
+  float: right;
+}
+.navbar .user-info .breadcrumb {
+  margin-bottom: 0;
+  margin-top: 8px;
+  background-color: #222222;
+}
+.navbar .user-info .breadcrumb li a {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+.navbar .user-info .breadcrumb li a:hover {
+  color: white;
+}
+.navbar .user-info .breadcrumb li:before {
+  color: #9E9E9E;
+}
+.navbar .user-info .breadcrumb > .active {
+  font-size: 15px;
+}
+.navbar .user-info .breadcrumb > .active a {
+  color: white;
+}

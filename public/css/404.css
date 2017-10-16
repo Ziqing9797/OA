@@ -1,0 +1,77 @@
+.navbar {
+  font-family: "微软雅黑";
+}
+.navbar .user-info {
+  float: right;
+}
+.navbar .user-info .breadcrumb {
+  margin-bottom: 0;
+  margin-top: 8px;
+  background-color: #222222;
+}
+.navbar .user-info .breadcrumb li a {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+.navbar .user-info .breadcrumb li a:hover {
+  color: white;
+}
+.navbar .user-info .breadcrumb li:before {
+  color: #9E9E9E;
+}
+.navbar .user-info .breadcrumb > .active {
+  font-size: 15px;
+}
+.navbar .user-info .breadcrumb > .active a {
+  color: white;
+}
+.Error-content .lost-task-area {
+  display: block;
+  z-index: 100;
+  position: fixed;
+  top: 36%;
+  left: 50%;
+  margin-left: -214px;
+  color: white;
+  text-align: center;
+  font-family: "微软雅黑";
+}
+.Error-content .lost-task-area p {
+  font-size: 30px;
+}
+.Error-content .lost-task-area h2 {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.Error-content .lost-task-area .back-button {
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+  height: 80px;
+  background: none;
+  text-align: center;
+  line-height: 43px;
+  border: solid 2px #fff;
+  font-weight: 700;
+  font-size: 23px;
+}
+.Error-content .lost-task-area .back-button:hover {
+  background-color: white;
+  color: black;
+}
+.Error-content footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: white;
+}
+.Error-content footer a {
+  color: white;
+}
+.Error-content .bg-video {
+  z-index: -999;
+  position: fixed;
+  width: 100%;
+}
